@@ -1,0 +1,418 @@
+/*
+Template: hummingbird
+Theme Name: hummingbird_custom
+Theme URI:http://open-cage.com/hummingbird/
+*/
+#menu-item-1999 span.gf {
+	display: none;
+}
+/*ライター一覧*/
+.writers{
+    overflow:hidden;
+}
+.writer-profile{
+    width: 18%;
+    min-height: 400px;
+    margin:4%;
+    float:left;
+}
+/*ライター一覧を狭い画面で表示するとき*/
+@media only screen and (max-width: 500px) {
+  .writer-profile{
+    width: 100%;
+    margin:2%;
+    float:left;
+	margin-bottom:3%;
+	padding-bottom:0;
+	min-height:10px;
+	/*影つきのボーダー装飾を付ける*/
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 1px 0 rgba(255,255,255,1);
+  }
+	.writer-profile figure{
+		max-width:15%;
+		float:left;
+		clear:none;
+		  }
+  .writer-profile .description{
+		
+		padding-top:5px;
+	  }
+  .writer-profile .name{
+ font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",sans-serif;
+	clear: both;
+	text-align:left !important;
+	}
+}
+
+.writer-profile .name{
+    text-align:center;
+    font-weight:bold;
+    padding:10px 0;
+    margin:0;
+}
+.writer-profile .description{
+    font-size:0.8em;
+}
+.writer-profile .button a{
+    font-size:0.8em;
+}
+.writer-profile .button a:after{
+    content:' >';
+}
+
+		  
+/*目次下のマージン*/
+div#toc_container.no_bullets{
+  margin-bottom:20px;
+}
+
+.entry-content ol{
+	  border: 1px dotted gray;
+border-radius: 10px;
+padding: 10px;
+font-size: 90%;
+	}
+
+/************************************
+** ブログカードのスタイル
+************************************/
+.blog-card{
+  padding:12px;
+  margin:10px 0;
+  border:1px solid #ddd;
+  word-wrap:break-word;
+  max-width:100%;
+  width:474px;
+  border-radius:5px;
+}
+ 
+.blog-card-thumbnail{
+  float:left;
+}
+ 
+.blog-card-content{
+  margin-left:110px;
+  line-height:120%;
+}
+.blog-card-title{
+  margin-bottom:5px;
+}
+ 
+.blog-card-title a{
+  font-weight:bold;
+  text-decoration:none;
+  color:#111;
+}
+ 
+.blog-card-excerpt{
+  color:#333;
+  font-size:90%;
+}
+ 
+.blog-card-footer{
+  font-size:70%;
+  color:#777;
+  margin-top:5px;
+}
+ 
+.clear{
+  clear:both;
+}
+
+
+.entry-content p,p.site_description{
+margin: 0.7em 0;
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-family: 'Quicksand', "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+	  
+  }
+	
+.entry-content p {color: #25343e;}
+
+/*
+#subscription-toggle,.bbp-template-notice,#qt_bbp_topic_content_toolbar,#bbp_stick_topic_select{display:none;}
+*/
+
+.wpp-list li img {width: 150px;
+margin-right:10px;
+}
+
+.np-post .navigation .prev {display:none;}
+
+
+/*PC表示でのトップの検索窓のズレ*/
+/*
+@media screen and (min-width: 600px) {
+ nav #searchform button .fa-search{
+	position: relative;
+　　top: -5px !important;
+　　}
+ nav #searchform input{
+　　top: -8px !important;
+	position: relative;
+　　}
+}
+*/
+
+/*サークル一覧*/
+#circle-lists .circle{
+width: 48%;
+color: #666;
+background: #fff;
+border: 1px solid #eee;
+  padding:1em;
+margin-right:1%;
+margin-bottom: 1em;
+height: 390px;
+float:left;
+overflow:hidden;
+}
+
+#circle-lists .circle .eye-catch{
+  float:left;
+}
+
+#circle-lists .circle img{
+  max-height:50%;
+}
+
+#circle-lists .circle .circle-name{
+clear:left;
+}
+
+#circle-lists .circle:hover{
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.1) inset;
+}
+
+#circle-lists .circle h3{
+  text-align: center; 
+}
+
+/*サークル個別ページ*/
+#circle-page-show table{
+text-align: left;
+}
+
+#circle-page-show .description{
+background-color: #fff;
+padding:2em;
+margin-bottom: 2em;
+}
+#circle-page-show .eye-catch img{
+max-height:20em;
+}
+
+#circle-page-show .circle-name {
+font-size: 
+}
+
+/*facebooklikeboxの色*/
+#facebook-likebox-7 .widgettitle span a {
+color: white;
+}
+
+/*フッターのご意見箱*/
+
+.footerwidget .wpcf7-submit{
+	  padding:0.5em 0;
+		margin:0 auto;
+	  }
+
+/*このライターにメッセージを送るフォーム　のスタイリング*/
+article .wpcf7 .article-contact{
+border: 1px dotted black;
+padding: 0 1em;
+border-radius: 8px;
+padding-bottom: ;
+margin-bottom: 1em;
+cursor: pointer;  
+}
+
+article .wpcf7 .article-contact h4{
+  text-align: center; 
+  }
+	  
+article input.wpcf7-form-control.wpcf7-submit{
+  margin-bottom:0px;
+}
+/*このライターにメッセージを送るフォーム　のスタイリング終わり*/
+
+/*関連記事のmarginを詰める*/
+#main .yarpp-related { margin:0;}
+
+.related-box{
+  color:blue;
+}
+
+/*ユーザー登録時のエラー*/
+.deletedmsg + br,
+.deletedmsg {display:none;}
+
+#theme-my-login ul li {list-style:none !important;　margin-left:5px;}
+
+/*ランキング画像の調整*/
+img.wpp-thumbnail.wpp_featured_stock.wp-post-image{
+  margin-right:10px;
+}
+
+
+#inner-header .top-nav li {
+border-right: 1px dotted #fff;  
+}
+/*
+#container .header{
+background-image: url("http://todai-umeet.com/wp-content/uploads/2016/06/13507201_1106242916134723_1670332064665920519_n.jpg") !important;
+/*http://todai-umeet.com/wp-content/uploads/2016/03/lgi01a201404070300-2.jpg*/
+}
+*/
+/*
+#footer-top{
+background-image: url("http://todai-umeet.com/wp-content/uploads/2016/06/13507201_1106242916134723_1670332064665920519_n.jpg") !important;
+}
+*/
+
+.nav li a:hover{
+background-color: rgba(255, 255, 255, 0.2) !important;
+  }
+
+img.wpp-thumbnail.wpp_featured_stock.wp-post-image{
+  max-height:100px;
+  }
+
+/* 背景色
+div#container{
+background-color: #f7f7f7;
+  }
+*/
+
+/*殿堂入り記事のスタイリング*/
+a.post-title.cat-post-title{
+  display:inline-block !important;
+ font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",sans-serif;
+
+  }
+
+/*掲示板のスタイル bbPressのスタイルを整える*/
+.bbp-breadcrumb-home,
+.bbp-breadcrumb-home+.bbp-breadcrumb-sep,
+.topic .post-date,
+.topic .post-update,
+.topic .footer-post-meta,
+.post-0 .post-date,
+.post-0 .post-update,
+.post-0 .footer-post-meta,
+.forum .post-date,
+.forum .post-update,
+.forum .footer-post-meta{
+    display: none;
+}
+
+#bbp_search{
+    font-size: 17px;
+    height: 28px;
+}
+
+.post-0 .post-meta{
+    height: 27px;
+}
+
+.bbp-reply-content{
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.bbp-forum-title{
+    font-size: 16px !important;
+}
+
+.bbp-topic-permalink{
+    font-size: 14px !important;
+}
+
+#bbpress-forums .status-closed,
+#bbpress-forums .status-closed a {
+    color: #555 !important;
+}
+
+/*
+.bbp-template-notice{display:none;}
+#bbp_stick_topic_select,#bbp_topic_status_select{display:none;}
+
+*/
+	.entry-content ul li:before{
+			background: none !important;}
+
+
+.article-contact h4{
+cursor: pointer;
+}
+
+
+/*本の感想*/
+
+.pods-submit .pods-submit-button{
+  padding: 10px 50px;
+  border: 1px solid #1e73be;
+  transition: 0.3s ease-in-out;
+  box-sizing: border-box;
+background: #008ec2;
+  margin-right:200px;
+  color:#fff;
+  
+  }
+
+.pods-submit .pods-submit-button:hover{
+background: #1e73be;
+  color:#fff;
+  }
+
+ .pods-form .pods-validate-error-message{
+	display:none !important;   
+	}
+
+
+/* h1でもh2と同じようなデザインの見出しにする*/
+
+article.post .entry-content h1{
+position: relative;
+  background:#275ddd;
+border: none;
+font-size: 1.25em;
+padding: 1em 1.1em;
+margin-top: 2.1em;
+margin-bottom: 1em;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+color: #fff;
+box-shadow: 0 0 45px rgba(0, 0, 0, 0.25) inset;
+}
+
+article.post	.entry-content h1:before{
+top: 3px;
+left: 0;
+}
+
+ .entry-content h1:before, .entry-content h1:after{
+content: '';
+display: block;
+width: 100%;
+position: absolute;
+}
+
+ .entry-content h1:after{
+bottom: 3px;
+left: 0;
+}
+
+
+
+.entry-content h2:before, .entry-content h2:after{
+  border-top: none;
+  border-bottom: none;
+}
